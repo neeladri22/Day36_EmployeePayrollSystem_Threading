@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f8fdKDtaYbVjS8m7xbIxv4+bopQ4GVBgYvPoioXH/sGm2I4tMnPOGcEK2JYbwvq3mUk+utnRF0i1SRrBWD7p0A==",
+  "dgSpecHash": "e0QJaLvCnQY1pgJbMjrFTSsCbKBnTsYHs4KwpixdVMmF+01Zgy+uo8/u2T3ibDhe09FodNXK9jnzNH83utlEtw==",
   "success": true,
   "projectFilePath": "F:\\Day36_Employee_PayRoll_Program\\EmployeePayrollSystemThreading\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\apple\\.nuget\\packages\\mstest.testframework\\2.2.8\\mstest.testframework.2.2.8.nupkg.sha512",
     "C:\\Users\\apple\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\apple\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\apple\\.nuget\\packages\\nlog\\5.0.1\\nlog.5.0.1.nupkg.sha512",
     "C:\\Users\\apple\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\apple\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\apple\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
