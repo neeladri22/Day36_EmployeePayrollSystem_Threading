@@ -8,6 +8,7 @@ namespace EmployeePayrollSystemThreading
 {
     public class EmployeePayrollOperations
     {
+
         public static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=payroll;Integrated Security=True";
         SqlConnection connection = new SqlConnection(connectionString);
 
@@ -52,6 +53,24 @@ namespace EmployeePayrollSystemThreading
                 Console.WriteLine("Employee added" + employeeData.EmployeeName);
             });
         }
+
+
+
+        public void addEmployeeToPayrollDataBaseWithThread(List<EmployeeDetails> employeePayrollDataList)
+        {
+            employeePayrollDataList.ForEach(employeeData =>
+            {
+                Task thread = new Task(() =>
+                {
+                    Console.WriteLine("Employee being added" + employeeData.EmployeeName);
+                    this.addEmployeePayrollDatabase(employeeData);
+                    Console.WriteLine("Employee added" + employeeData.EmployeeName);
+                });
+                thread.Start();
+            });
+        }
+
+
         public void addEmployeePayrollDatabase(EmployeeDetails employeeDetails)
         {
             SqlCommand command = new SqlCommand("spInsertData", connection);
@@ -75,5 +94,9 @@ namespace EmployeePayrollSystemThreading
             //closing connection
             Console.WriteLine(result);
             connection.Close();
-    }   }
+
+        }
+
+    }
+
 }
